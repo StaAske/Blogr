@@ -1,0 +1,88 @@
+@import "utilities";
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+// Primary
+$lightRed: hsl(356, 100%, 66%);
+$veryLightRed: hsl(355, 100%, 74%);
+$veryDarkBlue: hsl(208, 49%, 24%);
+
+// Neutral
+$white: hsl(0, 0%, 100%); //text
+$grayishBlue: hsl(240, 2%, 79%); // footer text
+$veryDarkGrayishBlue: hsl(207, 13%, 34%); //body copy
+$veryDarkBlackBlue: hsl(240, 10%, 16%); //footer background
+
+//Gradient
+//Background gradient - Intro/CTA mobile nav:
+$bgLightRed: hsl(13, 100%, 72%);
+$bgLightRed: hsl(353, 100%, 62%);
+
+//Background gradient - body:
+$veryDarkGrayBlue: hsl(237, 17%, 21%);
+$veryDarkDesaturatedBlue: hsl(237, 23%, 32%);
+
+// Fonts
+$mainFont: 'Overpass', sans-serif;
+$btnFont: 'Ubuntu', sans-serif;
+$bgColorIs: none;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: $white;
+    font-size: 16px;
+    font-family: $mainFont;
+    overflow-x: hidden;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+
+    li {
+        list-style: none;
+        font-family: $btnFont;
+        font-weight: 500;
+        cursor: pointer;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+h2 {
+    color: $veryDarkBlue;
+    font-size: 2.5rem;
+}
+h3 {
+    color: $veryDarkBlue;
+    font-size: 1.8em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: $veryDarkBlue;
+    line-height: 1.6em;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: 0.3s all ease-in-out;
+    transform: scale(0.8);
+}
+

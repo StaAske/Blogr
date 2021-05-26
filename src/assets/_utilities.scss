@@ -1,0 +1,22 @@
+@mixin headBtns($color) {
+    padding: 10px 15px;
+    border-radius: 50px;
+    min-width: 120px;
+    text-align: center;
+    transition-duration: 0.7s;
+
+    &:hover {
+
+        @if $color == $white {
+            color: $white;
+            background-color: $veryLightRed;
+
+        } @else if $color == $veryLightRed {
+            color: $veryLightRed;
+            background-color: $white;
+
+        } @else if $color == $bgColorIs {
+            text-decoration: underline;
+        }
+    }
+}
