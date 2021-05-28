@@ -1,5 +1,4 @@
 <template>
-  <div class="header-outer">
     <section class="header-section">
       <div class="container">
         <header>
@@ -71,7 +70,6 @@
         </div>
       </div>
     </section>
-  </div>
 </template>
 
 <script>
@@ -85,8 +83,6 @@ export default {
         productList: false,
         companyList: false,
         connectList: false,
-
-        
       }
     },
     methods: {
@@ -104,12 +100,9 @@ export default {
 }
 </script>
 
-<style lang="scss" >
-  .header-outer {
-    height: 100vh;
-  }
+<style lang="scss">
     section.header-section {
-        height: 85vh;
+        height: 600px;
         color: $white;
         background: rgb(255,143,112);
         background-image: url("../assets/images/bg-pattern-intro.svg");
@@ -117,7 +110,7 @@ export default {
         background-size: auto auto;
         background-position: 40% 50%;
         border-bottom-left-radius: 70px;
-        
+        margin-bottom: 100px;
 
 
         header {

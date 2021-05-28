@@ -15,10 +15,10 @@
                             Increase the usability of your blog by adding  customized categories, sections, format, or flow. 
                             With this functionality, you're in full control.</p>
                         </div>
-                        <!-- <div class="intro-inner-image">
-                            <img class="" src="../assets/images/illustration-editor-desktop.svg">
-                        </div> -->
                 </div>
+            </div>
+            <div class="first-intro-image">
+                <img class="" src="../assets/images/illustration-editor-desktop.svg">
             </div>
     </section>
     <section class="art-infra">
@@ -38,6 +38,57 @@
             </div>
         </div>
     </section>
+    <section class="art-infra-2">
+        <div class="art-img">
+            <img src="../assets/images/illustration-laptop-desktop.svg" alt="">
+        </div>
+        <div class="container">
+            <div class="inner-block">
+                <div class="art-text-1 fade-in">
+                    <h3>Free, open, simple</h3>
+                    <p>Blogr is a free and open source application backed by a large community of helpful developers.
+                    It supports features suck as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. 
+                    The architecture is clear and is relatively easy to learn.
+                    </p>
+                    <h3>Powerful tooling</h3>
+                    <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, 
+                    but capable of producting even the most complicated sites.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="inner-footer-block">
+                <div class="footer-logo">
+                    <img src="../assets/images/logo.svg" alt="">
+                </div>
+                <ul class="product">
+                    <li>Product</li>
+                    <li>Overview</li>
+                    <li>Pricing</li>
+                    <li>Marketplace</li>
+                    <li>Features</li>
+                    <li>Integrations</li>
+                </ul>
+
+                <ul class="company">
+                    <li>Company</li>
+                    <li>About</li>
+                    <li>Team</li>
+                    <li>Blog</li>
+                    <li>Careers</li>
+                </ul>
+
+                <ul>
+                    <li>Connect</li>
+                    <li>Contact</li>
+                    <li>Newsletter</li>
+                    <li>LinkedIn</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </template>
 
 <script>
@@ -82,7 +133,7 @@ export default {
 <style lang="scss" scoped>
     
     .intro-sec {
-        height: 100vh;
+        height: 820px;
         position: relative;
 
         h2 {
@@ -98,25 +149,19 @@ export default {
             }
         }
     }
-    .intro-sec::after {
-        content: "";
+    .first-intro-image {
+        display: inline-block;
         position: absolute;
-        float: right;
-        top: -110px;
-        right: -280px;
-        width: 60%;
-        height: 120%;
-        background-image: url(../assets/images/illustration-editor-desktop.svg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        
+        right: -275px;
+        top: -70px;
+        z-index: -1;
     }
 
     // State of the Art Infrastructure
 
     .art-infra {
-        height: 100vh;
-        display: flex;
+        height: 600px;
+        margin-top: 100px;
 
         &-bg-block {
             height: 400px;
@@ -143,5 +188,55 @@ export default {
                 padding-left: 30px;
             }
         }
+    }
+    // Addintional info
+    .art-infra-2 {
+        height: 800px;
+        .art-img {
+            display: inline-block;
+            position: absolute;
+            left: -275px;
+            z-index: -1;
+        }
+        .inner-block {
+            .art-text-1 {
+                float: right;
+                width: 50%;
+                margin-top: 150px;
+            }
+        }
+    }
+    // Footer
+    footer {
+        background-color: $veryDarkBlackBlue;
+        border-top-right-radius: 70px;
+        padding-top: 90px;
+        margin-top: 100px;
+        .inner-footer-block {
+            display: flex;
+            justify-content: space-around;
+            height: 340px;
+
+            ul {
+                display: block;
+                color: $white;
+
+                li {
+                    font-weight: 400;
+                    padding: .7em;
+                }
+                li:hover {
+                    text-decoration: underline;
+                }
+                li:nth-of-type(1) {
+                    padding-bottom: 1em;
+                    font-weight: 700;
+                    text-decoration: none;
+                    cursor: auto;
+                    
+                }
+            }
+        }
+        
     }
 </style>
